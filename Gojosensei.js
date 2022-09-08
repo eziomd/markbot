@@ -1454,11 +1454,11 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
+let teks = `╚𝗧𝗔𝗚 𝗔𝗟𝗟╝ 
  
- ➲ *Message : ${q ? q : 'no message'}*\n\n`
+ ➲ 𝗠𝗦𝗚 : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
-                teks += `🐦 @${mem.id.split('@')[0]}\n`
+                teks += ╠` @${mem.id.split('@')[0]}\n`
                 }
                 GojoMdNx.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
@@ -1467,7 +1467,7 @@ let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝
             if (!m.isGroup) return replay(`${mess.group}`)
             if (!isBotAdmins) return replay(`${mess.botAdmin}`)
             if (!isAdmins) return replay(`${mess.admin}`)
-            GojoMdNx.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
+            GojoMdNx.sendMessage(m.chat, { ⅝text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
 	    case 'style': case 'styletext': {
@@ -2089,16 +2089,16 @@ break
                 let buttonMessage = {
                     image: { url: anu.thumbnail },
                     caption: `
-🐦 Title : ${anu.title}
-🐦 Ext : Search
-🐦 ID : ${anu.videoId}
-🐦 Duration : ${anu.timestamp}
-🐦 Viewes : ${anu.views}
-🐦 Uploaded On : ${anu.ago}
-🐦 Author : ${anu.author.name}
-🐦 Channel : ${anu.author.url}
-🐦 Description : ${anu.description}
-🐦 Url : ${anu.url}`,
+➫ *Title* : ${anu.title}
+➫ *Ext* : Search
+➫ *ID( : ${anu.videoId}
+➫ *Duration* : ${anu.timestamp}
+➫ *Viewes* : ${anu.views}
+➫ *Uploaded On* : ${anu.ago}
+➫ *Author* : ${anu.author.name}
+➫ *Channel* : ${anu.author.url}
+➫ *Description* : ${anu.description}
+➫ *Url* : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
